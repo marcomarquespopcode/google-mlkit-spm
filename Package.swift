@@ -11,10 +11,10 @@ let package = Package(
             targets: ["MLKitBarcodeScanning", "MLImage", "MLKitVision", "Common"])
     ],
     dependencies: [
-        .package(url: "https://github.com/google/promises.git", from: "2.1.1"),
-        .package(url: "https://github.com/google/GoogleDataTransport.git", from: "9.2.0"),
-        .package(url: "https://github.com/google/GoogleUtilities.git", from: "7.7.1"),
-        .package(url: "https://github.com/google/gtm-session-fetcher.git", from: "3.1.0"),
+        .package(url: "https://github.com/google/promises.git", from: "2.4.0"),
+        .package(url: "https://github.com/google/GoogleDataTransport.git", from: "10.1.0"),
+        .package(url: "https://github.com/google/GoogleUtilities.git", from: "8.1.0"),
+        .package(url: "https://github.com/google/gtm-session-fetcher.git", from: "5.0.0"),
         .package(url: "https://github.com/firebase/nanopb.git", .upToNextMinor(from: "2.30910.0")),
     ],
     targets: [

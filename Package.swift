@@ -15,7 +15,7 @@ let package = Package(
         .package(url: "https://github.com/google/GoogleDataTransport.git", from: "9.2.0"),
         .package(url: "https://github.com/google/GoogleUtilities.git", from: "7.7.1"),
         .package(url: "https://github.com/google/gtm-session-fetcher.git", from: "3.1.0"),
-        .package(url: "https://github.com/firebase/nanopb.git", .upToNextMinor(from: "2.30909.0")),
+        .package(url: "https://github.com/firebase/nanopb.git", .upToNextMinor(from: "2.30910.0")),
     ],
     targets: [
         // these binaryTarget will be overriden when GitHub actions run, so do not edit

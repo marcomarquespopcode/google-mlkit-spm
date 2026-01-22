@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "MLKitSPM",
-    platforms: [.iOS(.v14)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "MLKitBarcodeScanning",
@@ -30,8 +30,8 @@ let package = Package(
             name: "MLKitVision",
             path: "Sources/MLKitVision/MLKitVision.framework"
         ),
-        .binaryTarget(name: "GoogleToolboxForMac", url: "https://github.com/marcomarquespopcode/google-mlkit-spm/releases/download/1.0.5/GoogleToolboxForMac.xcframework.zip", checksum: "637f9f3f9af4131133350b4de1636d232d6f64bc481eb458c499a260c2887d92"),
-        .binaryTarget(name: "GoogleUtilitiesComponents", url: "https://github.com/marcomarquespopcode/google-mlkit-spm/releases/download/1.0.5/GoogleUtilitiesComponents.xcframework.zip", checksum: "036a97df6265fe0d6c0cd0d75d99e5fec0ae788672ae4733923092c61e9e93f1"),
+        .binaryTarget(name: "GoogleToolboxForMac", url: "https://github.com/marcomarquespopcode/google-mlkit-spm/releases/download/1.0.5/GoogleToolboxForMac.xcframework.zip", checksum: "ca22140cf86cacb3d0db8a9a10529cecb946c553d9a0351b2897b7398516e9b5"),
+        .binaryTarget(name: "GoogleUtilitiesComponents", url: "https://github.com/marcomarquespopcode/google-mlkit-spm/releases/download/1.0.5/GoogleUtilitiesComponents.xcframework.zip", checksum: "172f0173f4fa6d46ae73aead0cfe601fd0727bf24e70e7d49c6fe1e1f5a06571"),
         .target(
             name: "Common",
             dependencies: [

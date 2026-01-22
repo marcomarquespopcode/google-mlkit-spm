@@ -1,4 +1,4 @@
-DEPLOYMENT_TARGET = '14.0'
+DEPLOYMENT_TARGET = '15.0'
 
 # Uncomment the next line to define a global platform for your project
 platform :ios, DEPLOYMENT_TARGET

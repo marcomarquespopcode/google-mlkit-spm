@@ -30,8 +30,8 @@ let package = Package(
             name: "MLKitVision",
             path: "Sources/MLKitVision/MLKitVision.framework"
         ),
-        .binaryTarget(name: "GoogleToolboxForMac", url: "https://github.com/marcomarquespopcode/google-mlkit-spm/releases/download/1.0.5/GoogleToolboxForMac.xcframework.zip", checksum: "ca22140cf86cacb3d0db8a9a10529cecb946c553d9a0351b2897b7398516e9b5"),
-        .binaryTarget(name: "GoogleUtilitiesComponents", url: "https://github.com/marcomarquespopcode/google-mlkit-spm/releases/download/1.0.5/GoogleUtilitiesComponents.xcframework.zip", checksum: "172f0173f4fa6d46ae73aead0cfe601fd0727bf24e70e7d49c6fe1e1f5a06571"),
+        .binaryTarget(name: "GoogleToolboxForMac", url: "https://github.com/marcomarquespopcode/google-mlkit-spm/releases/download/1.0.5/GoogleToolboxForMac.xcframework.zip", checksum: "a18406849686b594ca5f11dffd2c68d6287c8130a48e2fb06495a2ea2acbc771"),
+        .binaryTarget(name: "GoogleUtilitiesComponents", url: "https://github.com/marcomarquespopcode/google-mlkit-spm/releases/download/1.0.5/GoogleUtilitiesComponents.xcframework.zip", checksum: "bf260b6d20bdea8509bbaa3a5a2b1c79afd255bc448a38db7d6c79483e448c97"),
         .target(
             name: "Common",
             dependencies: [

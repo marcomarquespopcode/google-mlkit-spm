@@ -1,4 +1,4 @@
-DEPLOYMENT_TARGET = '15.0'
+DEPLOYMENT_TARGET = '14.0'
 
 # Uncomment the next line to define a global platform for your project
 platform :ios, DEPLOYMENT_TARGET
@@ -15,7 +15,7 @@ target 'MLKitSPM' do
 
   # Pods for MLKitSPM
 
-  pod 'GoogleMLKit/BarcodeScanning', '~> 3.2.0'
+  pod 'GoogleMLKit/BarcodeScanning', '~> 4.0.0'
 
 end
 
@@ -23,6 +23,8 @@ post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = DEPLOYMENT_TARGET
+      config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf'
+      config.build_settings['STRIP_INSTALLED_PRODUCT'] = 'NO'
     end
   end
 end
